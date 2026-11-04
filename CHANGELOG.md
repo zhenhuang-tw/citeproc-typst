@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Note-style footnotes are now created outside the rendering `context`, so they exist in every layout iteration. Citations of unknown keys in note styles are now also placed in a footnote.
+
 ## [0.2.1] - 2026-06-23
 
 ### Added
