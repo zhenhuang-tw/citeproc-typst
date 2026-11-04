@@ -9,6 +9,7 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ### Fixed
 
+- `first-reference-note-number` now follows the actual footnote numbers. Note numbers used to be counted as one per citation, which broke short forms such as "supra note N" after a footnote without citations, a footnote with several `cite(form: "prose")` calls, a multi-item `multicite`, or a reset of the footnote counter.
 - Note-style footnotes are now created outside the rendering `context`, so they exist in every layout iteration. Citations of unknown keys in note styles are now also placed in a footnote.
 
 ## [0.2.1] - 2026-06-23
