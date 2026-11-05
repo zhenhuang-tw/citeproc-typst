@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- All CSL 1.0.2 name variables are now parsed and rendered. `contributor`, `compiler`, `organizer`, `chair`, `curator`, `editorial-director`, `executive-producer`, `guest`, `host`, `narrator`, `performer`, `producer`, `script-writer` and `series-creator` previously rendered as empty.
+
 ## [0.2.1] - 2026-06-23
 
 ### Added
