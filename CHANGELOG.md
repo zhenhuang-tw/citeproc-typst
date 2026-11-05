@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- With BibTeX input, `title` with `form="short"` now uses the BibLaTeX `shorttitle` field. Previously only a `title-short` field was read, so the full title was always printed.
+
 ## [0.2.1] - 2026-06-23
 
 ### Added
