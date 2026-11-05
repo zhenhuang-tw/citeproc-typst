@@ -7,6 +7,10 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 ## [Unreleased]
 
+### Fixed
+
+- Locator ranges now follow the style's `page-range-format` instead of always being expanded. Without the attribute they are rendered as written (CSL 1.0.2), so Bluebook-style pinpoints such as "737-38" are no longer turned into "737–738". Locators with labels other than `page` keep their digits as written.
+
 ## [0.2.1] - 2026-06-23
 
 ### Added
