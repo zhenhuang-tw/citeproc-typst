@@ -11,6 +11,9 @@ and this project adheres to [Semantic Versioning](https://semver.org/spec/v2.0.0
 
 - `first-reference-note-number` now follows the actual footnote numbers. Note numbers used to be counted as one per citation, which broke short forms such as "supra note N" after a footnote without citations, a footnote with several `cite(form: "prose")` calls, a multi-item `multicite`, or a reset of the footnote counter.
 - Note-style footnotes are now created outside the rendering `context`, so they exist in every layout iteration. Citations of unknown keys in note styles are now also placed in a footnote.
+- Locator ranges now follow the style's `page-range-format` instead of always being expanded. Without the attribute they are rendered as written (CSL 1.0.2), so Bluebook-style pinpoints such as "737-38" are no longer turned into "737–738". Locators with labels other than `page` keep their digits as written.
+- All CSL 1.0.2 name variables are now parsed and rendered. `contributor`, `compiler`, `organizer`, `chair`, `curator`, `editorial-director`, `executive-producer`, `guest`, `host`, `narrator`, `performer`, `producer`, `script-writer` and `series-creator` previously rendered as empty.
+- With BibTeX input, `title` with `form="short"` now uses the BibLaTeX `shorttitle` field. Previously only a `title-short` field was read, so the full title was always printed.
 
 ## [0.2.1] - 2026-06-23
 
